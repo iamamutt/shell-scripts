@@ -1,0 +1,52 @@
+{
+	"folders": [
+		{
+			"name": "Shell scripts",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.DS_Store": true,
+			"**/.git": true,
+			"**/.hg": true,
+			"**/.svn": true,
+			"**/CVS": true,
+			"**/Thumbs.db": true,
+			"*.command": true,
+			"resources": true
+		}
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"problemMatcher": [],
+		"echoCommand": true,
+		"presentation": {
+			"echo": true,
+			"reveal": "silent",
+			"focus": false,
+			"panel": "shared",
+			"showReuseMessage": true,
+			"clear": false,
+			"revealProblems": "onProblem"
+		},
+		"osx": {
+			"options": {
+				"shell": {
+					"executable": "/bin/zsh",
+					"args": [
+						"--login",
+						"-c"
+					]
+				}
+			}
+		},
+		"tasks": [
+			{
+				"label": "Nothing Task",
+				"type": "shell",
+				"command": "echo 'hi'"
+			}
+		]
+	}
+}
